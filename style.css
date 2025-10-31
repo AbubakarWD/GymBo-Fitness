@@ -21,6 +21,7 @@ header {
 
 nav {
     display: flex;
+    justify-content: space-around;
     /* border-radius: 12px; */
     background: #ffffff1a;
     border: 1px solid #ffffff20;
@@ -31,8 +32,10 @@ nav {
 header h1 {
     /* border: 2px solid rgb(240, 181, 21); */
     font-size: 35px;
-    width: 300px;
-    padding: 20px 20px 10px 120px;
+    /* width: 300px; */
+    width: fit-content;
+    /* padding: 20px 20px 10px 120px; */
+    padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -44,7 +47,7 @@ header ul {
     /* border: 2px solid rgb(255, 166, 0); */
     /* width: 300px; */
     padding: 30px 20px 10px 10px;
-
+    width: fit-content;
 }
 
 header li {
@@ -74,18 +77,19 @@ header li:active {
 .social {
     /* border: 2px solid rgb(107, 230, 7); */
     padding: 15px 20px 10px 90px;
-
+    padding: 20px;
+    width: fit-content;
 }
 
 .social img {
     /* border: 2px solid rgb(52, 230, 7); */
     width: 25px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .social img:hover {
     filter: brightness(0) saturate(100%) invert(66%) sepia(5%) saturate(3484%) hue-rotate(61deg) brightness(106%) contrast(89%);
-
+    cursor: pointer;
 }
 
 .home {
@@ -100,7 +104,7 @@ header li:active {
 .home::before {
     content: "";
     /* border: 2px solid rgb(7, 230, 118); */
-    background: url(./Img\ 2.jpg) no-repeat center center/cover;
+    background: url(./Images/Img\ 2.jpg) no-repeat center center/cover;
     /* background: transparent; */
     position: absolute;
     top: 0;
@@ -150,26 +154,29 @@ header li:active {
     font-size: 20px;
 }
 
-.btone {
+.bt-one {
     border: none;
     background: transparent;
     color: white;
+    cursor: pointer;
 }
 
-.btone:hover {
+.bt-one:hover {
     color: #67fd67;
 }
 
-.bttwo {
+.bt-two {
     background: transparent;
     color: #67fd67;
     border: 2px solid #67fd67;
 }
 
-.bttwo:hover {
+.bt-two:hover {
     background: rgb(51, 50, 50);
     color: white;
-    border: 2px solid white
+    border: 2px solid white;
+    cursor: pointer;
+
 }
 
 .membership {
@@ -401,7 +408,7 @@ hr {
     /* display: block; */
     padding: 5px;
     filter: brightness(0) saturate(100%) invert(66%) sepia(5%) saturate(3484%) hue-rotate(61deg) brightness(106%) contrast(89%);
-
+cursor: pointer;
 }
 
 .classes {
@@ -496,13 +503,6 @@ hr {
     scale: 1.1;
     color: #67fd67;
     background-color: white;
-}
-
-#item-1,
-#item-2,
-#item-3 {
-    /* border: 2px solid rgb(38, 0, 255); */
-
 }
 
 .timetable {
@@ -608,7 +608,8 @@ td {
 }
 
 .contactinfo button:hover {
-    color: #67fd67;
+    /* color: #67fd67; */
+    color: black;
     background-color: white;
 }
 
